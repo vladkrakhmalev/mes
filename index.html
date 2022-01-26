@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+  <script>
+    var userAgent = navigator.userAgent.toLowerCase()
+    if (((/mozilla/.test(userAgent) && !/firefox/.test(userAgent) &&!/chrome/.test(userAgent) && !/safari/.test(userAgent) && !/opera/.test(userAgent)) || /msie/.test(userAgent)))
+    document.querySelector('html').classList.add('_hide')
+  </script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        <img src="img/logo.png" alt="">
+      </div>
+      <p class="header__title">X Всероссийская научно-техническая конференция: Проблемы разработки перспективных микро- и наноэлектронных систем - 2021</p>
+      <div class="header__wrapper">
+        <div class="header__control header__control-login">
+          <a href="#popup-login" class="header__text popup-modal">Войти</a>
+        </div>
+        <div class="header__control header__control-registration">
+          <a href="#" class="header__text">Зарегистрироваться</a>
+        </div>
+        <button class="header__button button button__first">Обратная связь</button>
+        <span class="header__lang">
+          <img src="./img/ru-on.png" alt="">
+          <img src="./img/en-on.png" alt="">
+        </span>
+      </div>
+      <div class="header__menu menu">
+        <button class="menu__toggle">
+          <span class="menu__line menu__line-top"></span>
+          <span class="menu__line menu__line-center"></span>
+          <span class="menu__line menu__line-bottom"></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item" data-menu-item="1">
+            <a href="#" class="menu__text">Конференция</a>
+          </li>
+          <li class="menu__item" data-menu-item="2">
+            <a href="#" class="menu__text">Участникам</a>
+          </li>
+          <li class="menu__item" data-menu-item="3">
+            <a href="#" class="menu__text">Новости</a>
+          </li>
+          <li class="menu__item" data-menu-item="4">
+            <a href="#" class="menu__text">Архив</a>
+          </li>
+          <li class="menu__item" data-menu-item="5">
+            <a href="#" class="menu__text">Контакты</a>
+          </li>
+          <li class="menu__item" data-menu-item="6">
+            <a href="#" class="menu__text">Другое</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__search search">
+        <input type="search" class="search__input">
+        <button class="search__button"><img src="img/icon_search.png" alt=""></button>
+      </div>
+      <div class="submenu light" data-menu-item="1">
+        <img src="img/menu-image-1.jpg" alt="" class="submenu__image">
+        <div class="submenu__column">
+          <p class="submenu__title">Заголовок</p>
+          <a href="#" class="submenu__text small">Положения о конференции</a>
+          <a href="#" class="submenu__text small">Правила проведения</a>
+          <a href="#" class="submenu__text small">Органы управления</a>
+          <a href="#" class="submenu__text small">История</a>
+        </div>
+        <div class="submenu__column">
+          <p class="submenu__title">Заголовок</p>
+          <a href="#" class="submenu__text small">Место и время проведения</a>
+          <a href="#" class="submenu__text small">Актуальная информация</a>
+        </div>
+        <div class="submenu__column">
+          <p class="submenu__title">Заголовок</p>
+          <a href="#" class="submenu__text small">Доклады участников МЭС-2021</a>
+          <a href="#" class="submenu__text small">Голосование</a>
+          <a href="#" class="submenu__text small">Статистика</a>
+          <a href="#" class="submenu__text small">Клуб МЭС</a>
+        </div>
+      </div>
+      <div class="submenu light" data-menu-item="2">
+        <img src="img/menu-image-2.jpg" alt="" class="submenu__image">
+        <div class="submenu__column">
+          <p class="submenu__title">Заголовок</p>
+          <a href="#" class="submenu__text small">Правила оформления докладов</a>
+          <a href="#" class="submenu__text small">Сроки предоставления докладов</a>
+          <a href="#" class="submenu__text small">Конкурс докладов</a>
+        </div>
+        <div class="submenu__column">
+          <p class="submenu__title">Заголовок</p>
+          <a href="#" class="submenu__text small">Популярные вопросы</a>
+          <a href="#" class="submenu__text small">Клуб МЭС</a>
+        </div>
+      </div>
+      <div class="submenu light" data-menu-item="3">
+        <img src="img/menu-image-3.jpg" alt="" class="submenu__image">
+        <div class="submenu__column">
+          <a href="#" class="submenu__text small">Новости</a>
+          <a href="#" class="submenu__text small">СМИ о нас</a>
+        </div>
+      </div>
+      <div class="submenu light submenu_archive" data-menu-item="4">
+        <img src="img/menu-image-4.jpg" alt="" class="submenu__image">
+        <div class="submenu__column">
+          <p class="submenu__archive-title">Статьи</p>
+          <div class="submenu__list">
+            <a href="#" class="submenu__text small">2005</a>
+            <a href="#" class="submenu__text small">2006</a>
+            <a href="#" class="submenu__text small">2008</a>
+            <a href="#" class="submenu__text small">2010</a>
+            <a href="#" class="submenu__text small">2012</a>
+            <a href="#" class="submenu__text small">2014</a>
+            <a href="#" class="submenu__text small">2016</a>
+            <a href="#" class="submenu__text small">2018</a>
+            <a href="#" class="submenu__text small">2020</a>
+          </div>
+        </div>
+        <div class="submenu__column submenu__column_border">
+          <p class="submenu__archive-title">Отчеты</p>
+          <div class="submenu__list">
+            <a href="#" class="submenu__text small">2005</a>
+            <a href="#" class="submenu__text small">2006</a>
+            <a href="#" class="submenu__text small">2008</a>
+            <a href="#" class="submenu__text small">2010</a>
+            <a href="#" class="submenu__text small">2012</a>
+            <a href="#" class="submenu__text small">2014</a>
+            <a href="#" class="submenu__text small">2016</a>
+            <a href="#" class="submenu__text small">2018</a>
+            <a href="#" class="submenu__text small">2020</a>
+          </div>
+        </div>
+      </div>
+      <div class="submenu light" data-menu-item="5">
+        <img src="img/menu-image-5.jpg" alt="" class="submenu__image">
+        <div class="submenu__column">
+          <p class="submenu__title">Заголовок</p>
+          <a href="#" class="submenu__text small">Контактная информация</a>
+          <a href="#" class="submenu__text small">Контактная информация</a>
+          <a href="#" class="submenu__text small">Контактная информация</a>
+          <a href="#" class="submenu__text small">Место проведения</a>
+          <a href="#" class="submenu__text small">Как добраться</a>
+          <a href="#" class="submenu__text small">История</a>
+          <a href="#" class="submenu__text small">История</a>
+        </div>
+        <div class="submenu__column">
+          <p class="submenu__title">Заголовок</p>
+          <a href="#" class="submenu__text small">Размещение</a>
+          <a href="#" class="submenu__text small">О Зеленограде</a>
+        </div>
+      </div>
+      <div class="submenu light" data-menu-item="6">
+        <div class="submenu__image"></div>
+        <div class="submenu__column">
+          <p class="submenu__title">Заголовок</p>
+          <a href="#" class="submenu__text small">Положения о конференции</a>
+          <a href="#" class="submenu__text small">Правила проведения</a>
+          <a href="#" class="submenu__text small">Органы управления</a>
+          <a href="#" class="submenu__text small">История</a>
+        </div>
+        <div class="submenu__column">
+          <p class="submenu__title">Заголовок</p>
+          <a href="#" class="submenu__text small">Место и время проведения</a>
+          <a href="#" class="submenu__text small">Актуальная информация</a>
+        </div>
+        <div class="submenu__column">
+          <p class="submenu__title">Заголовок</p>
+          <a href="#" class="submenu__text small">Доклады участников МЭС-2021</a>
+          <a href="#" class="submenu__text small">Голосование</a>
+          <a href="#" class="submenu__text small">Статистика</a>
+          <a href="#" class="submenu__text small">Клуб МЭС</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="mainscreen dark">
+    <div class="container">
+      <h4 class="mainscreen__h4">X Всеросийская научно-техническая конференция</h4>
+      <h1 class="mainscreen__h1">Проблемы разработки перспективных микро и наноэлектронных систем</h1>
+      <div class="mainscreen__info">
+        <div class="mainscreen__date">
+          <p class="mainscreen__text">Февраль - ноябрь 2021</p>
+        </div>
+        <div class="mainscreen__place">
+          <p class="mainscreen__text">Москва  |  Зеленоград</p>
+        </div>
+        <div class="mainscreen__buttons">
+          <a href="#" class="mainscreen__button button button__first">Зарегистрироваться</a>
+          <a href="#popup-login" class="mainscreen__button button button__second popup-modal">Войти</a>
+        </div>
+      </div>
+      <div class="mainscreen__feed">
+        <h3 class="mainscreen__h4">Новости</h3>
+        <div class="mainscreen__slider slider">
+          <div class="slider__container">
+            <div class="slider__slide">
+              <P class="slider__title">Заголовок</P>
+              <p class="slider__date mini">20.10.2021</p>
+              <p class="slider__text small">Перенос сроков и обсуждения докладов в связи с отсутствием экспертных заключений
+                по
+                принятым докладам</p>
+            </div>
+            <div class="slider__slide">
+              <P class="slider__title">Длинный заголовок</P>
+              <p class="slider__date mini">20.10.2021</p>
+              <p class="slider__text small">Перенос сроков и обсуждения докладов в связи с отсутствием экспертных заключений
+                по
+                принятым докладам</p>
+            </div>
+            <div class="slider__slide">
+              <P class="slider__title">Заголовок</P>
+              <p class="slider__date mini">20.10.2021</p>
+              <p class="slider__text small">Перенос сроков и обсуждения докладов в связи с отсутствием экспертных заключений
+                по
+                принятым докладам</p>
+            </div>
+            <div class="slider__slide">
+              <P class="slider__title">Заголовок</P>
+              <p class="slider__date mini">20.10.2021</p>
+              <p class="slider__text small">Перенос сроков и обсуждения докладов в связи с отсутствием экспертных заключений
+                по
+                принятым докладам</p>
+            </div>
+            <div class="slider__slide">
+              <P class="slider__title">Заголовок</P>
+              <p class="slider__date mini">20.10.2021</p>
+              <p class="slider__text small">Перенос сроков и обсуждения докладов в связи с отсутствием экспертных заключений
+                по
+                принятым докладам</p>
+            </div>
+          </div>
+          <div class="slider__navigation">
+            <div class="slider__pagination"></div>
+          </div>
+          <a href="#" class="slider__link">Показать все новости</a>
+        </div>
+        <div class="mainscreen__timer">
+          <p class="mainscreen__text small">До окончания приема докладов: <span class="mainscreen__number">34</span> дня</p>
+        </div>
+      </div>
+    </div>
+    <div class="mainscreen__bg"></div>
+  </section>
+
+  <section class="timer">
+    <div class="container">
+      <div class="timer__block">
+        <div class="timer__col">
+          <p class="timer__text">1 Августа 2021 г. - завершени приема докладов. Осталось</p>
+        </div>
+        <div class="timer__col timer__col_blue">
+          <div class="timer__icon">
+            <img src="img/icon_date_blue.png" alt="" class="timer__img">
+          </div>
+          <div class="timer__numbers">
+            <div class="timer__td">
+              <span class="timer__num timer__day">141</span>
+              <span class="timer__span">день</span>
+            </div>
+            <div class="timer__td">
+              <span class="timer__num timer__hour">23</span>
+              <span class="timer__span">часа</span>
+            </div>
+            <div class="timer__td">
+              <span class="timer__num timer__min">56</span>
+              <span class="timer__span">минут</span>
+            </div>
+            <div class="timer__td">
+              <span class="timer__num timer__sec">30</span>
+              <span class="timer__span">секунд</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="welcome">
+    <div class="container">
+      <h2 class="welcome__h2">Добро пожаловать на сайт
+      конференции «МЭС-2021»</h2>
+      <div class="welcome__column">
+        <p>Всероссийская научно-техническая конференция с международным участием.</p>
+        <p><b>"Проблемы разработки перспективных микро- и наноэлектронных систем"</b> посвящена актуальным вопросам автоматизации проектирования МЭС, систем на кристалле, IP-блоков и новой элементной базы микро- и наноэлектроники. Эти вопросы были и остаются актуальными для науки и техники, о чем свидетельствует тематика соответствующих крупнейших ежегодных международных конференций по САПР и разработке микро- и наноэлектронной аппаратуры.</p>
+        <p>Конференция МЭС является крупнейшей конференцией в области САПР микроэлектроники на территории России и стран СНГ.</p>
+        <p><img src="./img/image-1.png" alt="" style="float: left; margin-right:20px;"> Сборник трудов конференции МЭС включен в Перечень ВАК (список от19.04.2019, поз1837) российских рецензируемых научных журналов, в которых должны быть опубликованы основные научные результаты диссертаций на соискание ученых степеней доктора и кандидата наук.</p>
+        <p><b>Специальности</b>, по которым Сборник трудов включен в список ВАК:</p>
+        <ul>
+          <li>05.13.05 - Элементы и устройства вычислительной техники и систем управления (технические науки)</li>
+          <li>05.13.11 - Математическое и программное обеспечение вычислительных машин, комплексов и компьютерных сетей (технические
+          науки)</li>
+          <li>05.13.12 - Системы автоматизации проектирования (технические науки)</li>
+          <li>05.13.15 - Вычислительные машины, комплексы и компьютерные сети (технические науки)</li>
+          <li>05.27.01 - Твердотельная электроника, радиоэлектронные компоненты, микро- и наноэлектроника, приборы на квантовых
+          эффектах (технические науки)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <h2 class="about__h2">Об условиях и месте проведения</h2>
+      <div class="about__column">
+        <p>Очередная X конференция МЭС-2021 будет проведена преимущественно в заочном формате, старт конференции - 1 февраля 2021 года.</p>
+        <p>До специального объявления предполагается, что:</p>
+        <ul>
+          <li>конференция завершится проведением пленарного заседания в ноябре 2021 года в Центральном доме ученых по адресу: Москва,
+          ул. Пречистенка, дом 16;</li>
+          <li>сессия «Презентации научно-технических достижений российских и зарубежных компаний и организаций, способствующих развитию микроэлектроники в России» будет проведена в ноябре 2021 года в КП «Корпорация развития Зеленограда» по адресу: г. Зеленоград, ул. Юности, дом 8.</li>
+        </ul>
+        <p>Сайт КП «Корпорация развития Зеленограда»: http://zelbi.ru/</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="facts">
+    <div class="container">
+      <h2 class="facts__h2">МЭС: цифры и факты</h2>
+      <div class="facts__item facts__country">
+        <div class="facts__image"></div>
+        <div class="facts__wrapper">
+          <p class="facts__number display">15</p>
+          <div class="facts__text">
+            <p class="big">стран</p>
+            <p class="small">В конференции участвуют представители</p>
+          </div>
+        </div>
+      </div>
+      <div class="facts__item facts__region dark">
+        <div class="facts__image"></div>
+        <div class="facts__wrapper">
+          <p class="facts__number display">45</p>
+          <div class="facts__text">
+            <p class="big">регионов РФ</p>
+            <p class="small">В конференции участвуют представители</p>
+          </div>
+        </div>
+      </div>
+      <div class="facts__item facts__organization dark">
+        <div class="facts__wrapper">
+          <div class="facts__title">
+            <p class="facts__number display">190</p>
+            <p class="big">организаций</p>
+          </div>
+          <div class="facts__text">
+            <p class="small">Наша конференция проводится
+            в партнерстве с академическими
+            организациями, ведущими вузами,
+            научными центрами и
+            индустриальными предприятиями
+            России и зарубежья</p>
+          </div>
+        </div>
+        <div class="facts__slider slider-facts">
+          <div class="slider-facts__container">
+
+
+            <div class="slider-facts__slide">
+              <img class="slider-facts__image" src="img/main-slider-image-1.jpg" alt="">
+              <p class="slider-facts__label small">Академические организации</p>
+            </div>
+            <div class="slider-facts__slide">
+              <img class="slider-facts__image" src="img/main-slider-image-1.jpg" alt="">
+              <p class="slider-facts__label small">Академические организации</p>
+            </div>
+            <div class="slider-facts__slide">
+              <img class="slider-facts__image" src="img/main-slider-image-1.jpg" alt="">
+              <p class="slider-facts__label small">Академические организации</p>
+            </div>
+            <div class="slider-facts__slide">
+              <img class="slider-facts__image" src="img/main-slider-image-1.jpg" alt="">
+              <p class="slider-facts__label small">Академические организации</p>
+            </div>
+            <div class="slider-facts__slide">
+              <img class="slider-facts__image" src="img/main-slider-image-1.jpg" alt="">
+              <p class="slider-facts__label small">Академические организации</p>
+            </div>
+
+
+          </div>
+          <div class="slider-facts__navigation custom_paging">
+            <p class="slider-facts__number slider-facts__current"></p>
+            <div class="slider-facts__line"></div>
+            <p class="slider-facts__number slider-facts__total"></p>
+          </div>
+        </div>
+      </div>
+      <div class="facts__item facts__participants">
+        <div class="facts__image"></div>
+        <div class="facts__wrapper">
+          <p class="facts__number display">1480</p>
+          <div class="facts__text">
+            <p class="big">участников</p>
+            <p class="small">Участие в нашей ежегодной принимают ученые и специалисты российских и зарубежных вузов, академических институтов, предприятий, проектных и исследовательских центров</p>
+          </div>
+        </div>
+      </div>
+      <div class="facts__item facts__article">
+        <div class="facts__image"></div>
+        <div class="facts__wrapper">
+          <p class="facts__number display">1061</p>
+          <div class="facts__text">
+            <p class="big">статья</p>
+            <p class="small">По итогам проведения 9 конференций издано свыше 1000 работ в рамках сборника трудов конференции МЭС. Сборник включён в ВАК и РИНЦ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners">
+    <div class="container">
+      <h2 class="partners__h2">Учредители, спонсоры и партнеры
+      конференции</h2>
+      <h5 class="partners__h5">Учредители</h5>
+      <div class="partners__images">
+        <img src="img/partners/image_1.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_2.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_3.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_4.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_5.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_6.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_7.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_8.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_9.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_10.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_11.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_12.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_13.jpg" alt="" class="partners__image column-1 row-2">
+        <img src="img/partners/image_14.jpg" alt="" class="partners__image">
+      </div>
+      <h5 class="partners__h5">Официальные партнеры</h5>
+      <div class="partners__images">
+        <img src="img/partners/image_15.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_16.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_17.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_18.jpg" alt="" class="partners__image column-1 row-1">
+      </div>
+      <h5 class="partners__h5">Спонсоры</h5>
+      <div class="partners__images">
+        <img src="img/partners/image_19.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_20.jpg" alt="" class="partners__image column-1 row-1">
+        <img src="img/partners/image_21.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_22.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_23.jpg" alt="" class="partners__image">
+      </div>
+      <h5 class="partners__h5">Информационная поддержка в печатных изданиях</h5>
+      <div class="partners__images">
+        <img src="img/partners/image_24.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_25.jpg" alt="" class="partners__image">
+        <img src="img/partners/image_26.jpg" alt="" class="partners__image column-1 row-1">
+        <img src="img/partners/image_27.jpg" alt="" class="partners__image">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer dark">
+    <div class="container">
+      <div class="footer__copyright">
+        <a class="footer__logo" href=""><img src="img/logo.png" alt="МЭС-2021"></a>
+        <p class="small">Copyright © 2009-2021 ИППМ РАН. All Rights Reserved</p>
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
+        <a href="#" class="footer__link">Пользовательское соглашение</a>
+      </div>
+      <div class="footer__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__text">Конференция</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__text">Участникам</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__text">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__text">Архив</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__text">Обратная связь</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <p class="footer__info-item place">г Щелково, ул. Радиоцентра № 5, дом 7А</p>
+        <a href="telto:+74951263572" class="footer__info-item tel">+ 7 (495) 126-35-72</a>
+        <a href="#" class="footer__info-item support">Обратная связь</a>
+      </div>
+      <div class="footer__label">
+        <p class="small">Создано <a href="#">ИППМ РАН</a> в соавторстве с <a href="#">Repsar</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="script">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </div>
+  
+</body>
+</html>
